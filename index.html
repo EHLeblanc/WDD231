@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eli LeBlanc - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD230-Web Frontend Development, Eli H. LeBlanc, course assignment portal">
+    <meta name="author" content="Eli LeBlanc">
+    <meta property="og:title" content="Eli LeBlanc WDD230 web frontend development home page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://en.wikipedia.org/wiki/Alice,_Texas">
+    <meta property="og:url" content="https://github.com/EHLeblanc/wdd230-2">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+            <h1>Eli LeBlanc</h1>
+            <img src="images/Nice me.jpg" alt="A picture of A me" width="150" height="150">
+    </header>
+    <nav>
+        <button id="menu" aria-label="hamburgerButton"></button>
+        <ul class="navigation">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="chamber/index.html">Chamber</a></li>
+            <li> <a href="">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>    
+    </nav>
+
+    <main>
+        <h1>WDD 231: Web Frontend Development</h1>
+        <section class="card1">
+            <h2>Learning Activities</h2>
+            <a href="week03/images/landscape.webp">webp</a>
+            <a href="">Week01</a>
+            <a href="">Week02</a>
+            <a href="">Week03</a>
+            <a href="">Week04</a>
+        </section>
+        <section class="card2">
+            <h2>Information</h2>
+            <p>Weather</p>
+            <p>Number of Visits: <span id="visits"></span></p>
+        </section>
+    </main>
+    <iframe src="https://maps.app.goo.gl/D2SQD4GG2jozxPuUA" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer>
+        <p>©2026 Eli LeBlanc TX</p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>
