@@ -3,35 +3,37 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-header {
-    display: flex;
-    background-color: #da5cda; 
-    align-items: center;
-    padding-left: 100px;
-    justify-content: center; }
+header{
+    align-items: flex-start;
+    text-align: start;
+    font-size:larger;
+    background-color: #00e07b; 
+    
+}
 main{
     display: grid;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
     background-color: #da5cda;
 }
-.card1
-{
-    border-radius: 30px;
+.card1{
+    display: grid;
     padding: 20px;
-    border: 3px solid black;
-    margin-left: 10px ;
-    margin-top: 10px;
+    border: 5px solid rgb(242, 0, 0);
+    background-color: #da5cda;
 }
-.card2
-{
+.card2{
+    display: grid;
     background-color: midnightblue;
     color: white;
-    border: 3px solid black;
+    border: 3px solid rgb(229, 253, 7);
     padding: 10px;
     margin-top: 0px;
+    align-self: right;
+}
+.card3{
+     display: grid;
+    padding: 20px;
+    border: 5px solid rgb(106, 14, 139);
+    background-color: #da5cda;   
 }
 .card p
 {
@@ -51,10 +53,10 @@ main{
     }
 #menu {
 	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid rgb(255, 119, 0);
 	padding: 10px 10px 10px;
     margin-top: 20px;
-	background-color: #eee;
+	background-color: #00c3ff;
 	color: #000;
  	position: absolute;
 	top: 1rem;
@@ -70,42 +72,34 @@ main{
 #menu.open::before {
 	content: "❌";
 }
-.nav{
-    display: block;
-    flex-direction: column;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    margin:0 auto;
+nav{  
     background-color: aqua;
+    display: flex;
+    justify-content: left;
+    gap: 12.5%;
+    font-size: small;
 }
-.navigation li
-{
-    display: none;
-}
-.navigation li a
-{
-    display: block;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 30px;
-
-}
-.navigation li a:hover
-{
-    background-color: #BDE0FE;
+.nav/ ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }   
 body {
 	font-family: 'Poppins', sans-serif;
     margin: auto;
     justify-content: center;
 }
+.card3{
+    color: #000;
+    color: #000;
+}
 footer{
     justify-content: center;
-    padding-top: 500px;
+    padding-top: 20px;
     text-align: center;
+    
 }
 #lastModified
 {
