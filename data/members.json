@@ -1,0 +1,28 @@
+{
+ "familyname": "LeBlanc",
+ "moveindate": "2023",
+ "nomberofrecords": 4,
+ "visited": "yes",
+ "memberdata":[
+    {
+      "name": "Brian LeBlanc",
+      "gender": "Male",
+      "birthdate": "1980-06-15"
+    },
+    {
+      "name": "Susie LeBlanc",
+      "gender": "Female",
+      "birthdate": "1981-04-01"
+    },
+    {
+      "name": "Fred LeBlanc",
+      "gender":"Male",
+      "birthdate": "1982-11-09"
+    },
+    {
+      "name": "Heather LeBlanc",
+      "gender": "Female",
+      "birthdate": "1983-09-09"
+    }
+ ]
+}
