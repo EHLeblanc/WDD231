@@ -1,4 +1,4 @@
-export const courses = [
+const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -77,8 +77,28 @@ export const courses = [
         completed: false
     }
 ]
-const result = ages.filter();
 
-function Pass(courses) {
-  return courses == true;
+const allButton = document.querySelector('#All')
+const cseButton = document.querySelector('#CSE')
+const wddButton = document.querySelector('#WDD')
+const classlist = document.querySelector('#classlist')
+
+function clearlist(){
+    const listitems = document.getElementsByClassName('.listitems')
+    console.log(listitems)
+    if(listitems.length>0){
+    listitems.forEach(element => {
+        element.remove()
+    });
 }
+}
+
+allButton.addEventListener('click', () => {
+    clearlist()
+   courses.map((item,index) => {
+    let listitem = document.createElement('li')
+    listitem.classList.add('.listitems')
+    listitem.innerText = item.subject+' '+item.number
+    classlist.appendChild(listitem)
+   })
+})
