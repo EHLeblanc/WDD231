@@ -63,22 +63,23 @@ main{
     width: 300px;
     height: 300px;
 }
-.card3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: 3px solid #fdd023;
-    grid-column: span 2;
-    image-resolution: 50%;
-    text-align: justify;
-    padding: 20px;
-    color: white;
-    background-color: #461d7c;
+#courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
 }
-.card3 h2{
-    grid-column: 1/span 3;
+
+.course-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #ddd;
+  color: #000;
+  text-align: center;
 }
-.card3 button{
-    border-radius: 10px;
+
+.completed {
+  background-color: #2e7d32;
+  color: white;
 }
 .card p
 {
