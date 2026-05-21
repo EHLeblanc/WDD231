@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A84E0F;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #A84E0F;
+    font-family: "Playwrite Deutschland Grundschrift", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#burger-menu {
+    display: none;
+    float: right;
+    background-color: white;
+    border: 0px;
+    margin: 10px;
+}
+
+#burger-menu img {
+    width: 50px;
+}
+
+h1  {
+    display: flex;
+
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#titleText {
+    font-size: 2em;
+    margin-bottom: -10px;
+}
+
+footer {
+    background-color: #A84E0F;
+    padding: 1px 0px 15px 0px;
+}
+
+nav {
+    display: flex;
+    gap: 4rem;
+    font-size: small;
+}
+
+nav a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+    color: white;
+}
+
+nav :hover {
+    color: #A84E0F;
+}
+
+#drop-down {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 8px 0px;
+}
+
+#drop-down a {
+    display: block;
+    font-size: 1.5em;
+    padding: 2px;
+}
+
+main {
+    background-color: white;
+    max-width: 10000px;
+    color: black;
+    padding-bottom: 20px;
+}
+
+#hero-img {
+    height: 100%;
+    width: 100%;
+}
+
+#main-title {
+    margin: 10px 80px;
+    font-size: 3rem;
+}
+
+button {
+    background-color: #A84E0F;
+    color: white;
+    font-size: 1rem;
+    border: 0px;
+    border-radius: 4px;
+    width: 105px;
+    height: 35px;
+}
+
+#member-block {
+    display: flex;
+    gap: 15px;
+}
+
+#member-block img {
+    width: 200px;
+}
+
+#member-block section {
+    margin: 30px;
+}
+
+#member-list img {
+    width: 400px;
+}
+
+#member-list section {
+    margin: 80px;
+}
+
+#watertower-img {
+    width: 125px;
+    margin: 20px;
+}
+
+
+#footer-sec {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+#lastModified {
+    color: white;
+    font-size: small;
+}
+
+#drop-down {
+    display: none; 
+}
+
+#drop-down.show {
+    display: block; 
+}
+
+main a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: black;
+    color: black;
+}
+
+#event-weather-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    aspect-ratio: 5/1;
+}
+
+.cards {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+.cards h4 {
+    background-color: #A84E0F;
+    color: white;
+    margin-top: 0px;
+    padding: 5px 0px;
+}
+
+#events {
+    grid-column: span 2;
+}
+
+#card-title {
+    margin-bottom: 0px;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+}
+
+#weather-icon {
+    height: 40px;
+    width: 40px
+}
+
+#business-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#business-cards img {
+    max-height: 40%;
+    max-width: 40%;
+}
