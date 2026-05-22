@@ -148,14 +148,6 @@ button {
     font-size: small;
 }
 
-#drop-down {
-    display: none; 
-}
-
-#drop-down.show {
-    display: block; 
-}
-
 main a {
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -175,7 +167,7 @@ main a {
     margin: 20px;
 }
 
-.cards h4 {
+.cards h2 {
     background-color: #A84E0F;
     color: white;
     margin-top: 0px;

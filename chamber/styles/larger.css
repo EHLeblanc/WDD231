@@ -1,0 +1,73 @@
+main h1 {
+    text-align: center;
+}
+
+#toggleView {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#gridView,
+#listView {
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+
+#gridView:hover,
+#listView:hover {
+    background-color: #000000;
+    transition: background-color 0.3s;
+}
+
+section {
+    border: 1px;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: var(--s1-bcolor);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid img {
+    border: 1px solid var(--p-bcolor);
+    box-shadow: #000000;
+}
+
+.grid section>* {
+    margin: 10px;
+}
+
+.list,
+.grid {
+    margin: 20px;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h2 {
+    font-size: 10px;
+}
+
+.list section{
+    display: block; 
+}
+
+img {
+    height: auto;
+}
