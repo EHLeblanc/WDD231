@@ -44,7 +44,6 @@ section {
 
 .grid img {
     border: 1px solid var(--p-bcolor);
-    box-shadow: #000000;
 }
 
 .grid section>* {
