@@ -17,40 +17,62 @@
    <link rel="icon" href="alicefavicon.ico">
    <script src="scripts/directory.js" defer></script>
    <script src="scripts/getdates.js" defer></script>
+   <script src="scripts/weather.js" defer></script>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
    <title>Directory | Chamber of Commerce | Alice</title>
 </head>
 <body>
    <header>
-    <button id="burger-menu"><img src="images/hamburger.webp" alt="menu" width="512"></button>
+    <button id="burger-menu"><img src="images/hamburger.webp" alt="menu" width="20"></button>
        <section id="title"><img src="images/alicewatertower.webp" alt="Alice water tower" id="watertower-img">
            <section id="header-title">
-               <h2 id="titleText">Alice</h2>
-               <h2>Chamber of Commerce</h2>
+               <h1 id="titleText">Alice</h1>
+               <h4>Chamber of Commerce</h4>
            </section>
        </section>
        <section>
            <nav>
-               <a href="./index.html"><h2>Home</h2></a>
-               <a href="./directory.html"><h2>Directory</h2></a>
-               <a href="./join.html"><h2>Join</h2></a>
-               <a href="./discover.html"><h2>Discover</h2></a>
+               <a href="../index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
            </nav>
        </section>
    </header>
    <main>
-       <section id="drop-down"></section>
-       <img id="hero-img" src="images/alicecity.webp" alt="Image of Alice">
-       <section id="directory-header">
-           <h1 id="main-title">Directory</h1>
-           <section id="filter-menu">
-               <h2>View:</h2>
-               <button id="list">List</button>
-               <button id="block">Block</button>
-               <section id="member-block"></section>
-               <section id="member-list"></section>
-           </section>
-       </section>
+    <section id="drop-down"></section>
+    <a href="./join.html"><h4>Join us today</h4></a>
+    <h1 id="main-title">Home</h1>
+    <img id="hero-img" src="images/alicecity.webp" alt="Image of Alice">
+    <section id="event-weather-section">
+        <section class="cards" id="events">
+            <h3 id="card-title">Events</h3>
+            <h4>Event 1 - Jun/3</h4>
+            <p>8am Recycling</p>
+            <h4>Event 2 - Jun/4</h4>
+            <p>4:30pm Family Reading time</p>
+
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+        <p>
+            Current Temperature:
+            <span id="current-temp"></span>
+        </p>
+
+        <p>
+            Conditions:
+            <span id="current-description"></span>
+        </p>
+
+        <div id="forecast"></div>
+</section>
+    </section>
+
+    <section id="business-cards">
+    </section>
 
    </main>
    <footer>
