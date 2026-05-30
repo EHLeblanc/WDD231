@@ -69,11 +69,9 @@ function displayMembersList(memberArray, outputElement) {
 
         website.innerHTML = `Click for website`;
         website.setAttribute('href', member.website);
-        memImg.setAttribute('src', member.image);
         memImg.setAttribute('alt', `${member.name} logo`);
         memImg.setAttribute('loading', 'lazy');
 
-        card.appendChild(memImg);
         card.appendChild(name);
         card.appendChild(address);
         card.appendChild(phone);

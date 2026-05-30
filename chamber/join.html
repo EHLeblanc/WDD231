@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="author" content="EliLeBlanc">
+   <meta name="description" content="WDD231 Chamber of Commerce for Alice Texas by Eli LeBlanc">
+
+   <meta property="og:title" content="Alice Chamber of Commerce Directory">
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://EHLeblanc.github.io/wdd231/chamber/directory.html">
+   <meta property="og:image" content="https://EHLeblanc.github.io/wdd231/chamber/images/alicecity.webp">
+
+   <link rel="stylesheet" href="styles/base.css">
+   <link rel="icon" href="alicefavicon.ico">
+   <script src="scripts/directory.js" defer></script>
+   <script src="scripts/getdate.js" defer></script>
+   <script src="scripts/join.js" defer></script>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+   
+   <title>Join | Chamber of Commerce | Alice</title>
+</head>
+<body>
+   <header>
+    <button id="burger-menu"><img src="images/hamburger.webp" alt="menu" width="20"></button>
+       <section id="title"><img src="images/alicewatertower.webp" alt="Alice water tower" id="watertower-img">
+           <section id="header-title">
+               <h1 id="titleText">Alice</h1>
+               <h4>Chamber of Commerce</h4>
+           </section>
+       </section>
+       </section>
+       <section>
+           <nav>
+               <a href="./index.html"><h1>Home</h1></a>
+               <a href="./directory.html"><h1>Directory</h1></a>
+               <a href="./join.html"><h1>Join</h1></a>
+               <a href="./discover.html"><h1>Discover</h1></a>
+           </nav>
+       </section>
+    </header>
+   <main>
+        <section id="drop-down"></section>
+        <img id="hero-img" src="images/alicecity.webp" alt="Image of Alice">
+        <h1 id="main-title">Join</h1>
+
+        <section id="main-grid">
+            <form id="form-grid" action="thankyou.html" method="get">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" title="Enter your first name">
+            
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" title="Enter your last name">
+            
+                <label for="orgTitle">Organizational Title:</label>
+                <input type="text" id="orgTitle" name="orgTitle" pattern="[a-zA-Z\s-]{7,}" title="Enter your organizational title (min 7 characters, hyphens and spaces allowed)" autocomplete="organization-title">
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="email" title="Enter your email address" placeholder="example@example.com">
+            
+                <label for="mobile">Mobile Phone:</label>
+                <input type="tel" id="mobile" name="mobile" required autocomplete="tel" title="Enter your mobile phone number">
+            
+                <label for="orgName">Business/Organization Name:</label>
+                <input type="text" id="orgName" name="orgName" required autocomplete="organization" title="Enter your business/organization name">
+            
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                <option value="">Select a membership level</option>
+                <option value="level1">Level 1</option>
+                <option value="level2">Level 2</option>
+                <option value="level3">Level 3</option>
+                <option value="level4">Level 4</option>
+                </select>
+
+                <label for="description">Business/Organization Description:</label>
+                <textarea name="description" id="description" rows="3" maxlength="850"></textarea>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="" />
+
+            
+                <button type="submit" id="submit">Join</button>
+            </form>
+
+            <section id="membership-cards">
+                <section class="membership-levels">
+                    <h2> Non Profit Membership</h2>
+                    <button id="learn-more-non-profit">Learn More</button>
+
+                </section>
+                <dialog id="non-profit-dialog">
+                    <h2>Non Profit Membership</h2>
+                    <p>This level is for non profit organizations and have no registration fee.</p>
+                    <button id="close-non-profit">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Bronze Membership</h2>
+                    <button id="learn-more-bronze">Learn More</button>
+
+                </section>
+                <dialog id="bronze-dialog">
+                    <h2>Bronze Membership</h2>
+                    <p>This level is for businesses and organizations that have a more niche goal or product.</p>
+                    <button id="close-bronze">Close</button>
+                </dialog>
+
+                <section class="membership-levels">
+                    <h2> Silver Membership</h2>
+                    <button id="learn-more-silver">Learn More</button>
+
+                </section>
+                <dialog id="silver-dialog">
+                    <h2>Silver Membership</h2>
+                    <p>This level is for businesses and organizations that improve quality of town living but aren't necessary.</p>
+                    <button id="close-silver">Close</button>
+                </dialog>
+
+
+                <section class="membership-levels">
+                    <h2> Gold Membership</h2>
+                    <button id="learn-more-gold">Learn More</button>
+
+                </section>
+                <dialog id="gold-dialog">
+                    <h2>Gold Membership</h2>
+                    <p>This level is for businesses and organizations that serve vital, irreplacable roles in the community.</p>
+                    <button id="close-gold">Close</button>
+                </dialog>
+
+            </section>
+        </section>
+
+   </main>
+
+   <footer>
+    <section id="footer-sec">
+        <p>@<span id="currentyear"></span> Eli LeBlanc</p>
+        </section>
+        <p id="lastModified"></p>
+</footer>
+
+</body>
+
+</html>
