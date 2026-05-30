@@ -37,7 +37,7 @@ if (dropDownBox.classList.contains ('show')) {
 const url = "./data/members.json";
 
 const listButton = document.querySelector('#list');
-const blockButton = document.querySelector('#block');
+const gridButton = document.querySelector('#grid');
 
 const memberBlockSection = document.getElementById('member-block');
 const memberListSection = document.getElementById('member-list');
@@ -82,7 +82,7 @@ function displayMembersList(memberArray, outputElement) {
 
     });
 }
-
+console.log(gridButton);
 listButton.addEventListener('click', async () => {
     const members = await getMemberData();
     displayMembersList(members, memberListSection);

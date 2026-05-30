@@ -17,7 +17,7 @@ function displaySpotlights(data) {
 
   // Filter only Gold or Silver members
   const qualifiedMembers = members.filter(member =>
-    member.membership === "Gold" || member.membership === "Silver"
+    member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
   );
 
   // Shuffle array randomly
